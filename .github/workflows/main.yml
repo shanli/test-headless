@@ -103,11 +103,6 @@ jobs:
             ### Verdict
             ✅ Approved / ⚠️ Needs Changes / ❌ Request Changes"
 
-          # 运行审查
-          run: claude -p "$PROMPT" \
-            --output-format json \
-            --max-turns 10 \
-            --allowedTools Read,Grep,Glob > review.json
 
 
       # 6. 发布审查评论
