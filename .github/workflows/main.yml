@@ -8,8 +8,10 @@
 name: Claude PR Review
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  # pull_request:
+   #  types: [opened, synchronize, reopened]
+  pull_request_target:
+    types: [opened, synchronize]  
 
 # 取消正在运行的重复工作流
 concurrency:
